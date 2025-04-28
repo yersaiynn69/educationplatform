@@ -1,24 +1,23 @@
-# Logs
-logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
+# Игнорировать виртуальную среду Python
+env/
+venv/
 
-node_modules
-dist
-dist-ssr
-*.local
+# Игнорировать временные файлы Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
+# Игнорировать настройки редактора
+.vscode/
+.idea/
+
+# Игнорировать системные файлы Mac
 .DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+
+# Игнорировать файлы окружения
+.env
+*.env
+
+# Игнорировать node_modules если используется frontend
+node_modules/
